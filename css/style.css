@@ -1,1 +1,19 @@
+body {
+	margin: 0;
+	background-color: gainsboro;
+}
 
+.container {
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+	width: 75%;
+	border-radius: 20px;
+	padding: 20px;
+	background-color: honeydew;
+}
+
+.container .tabs {
+	width: 75%;
+}
