@@ -28,6 +28,7 @@ body {
     border: 1px solid #ccc;
     border-top: none;
     overflow: auto;
+    background-color: white;
 }
 
 #lebron, #love, #korver, #steph, #durant, #klay, #russ, #pg, #melo, #kyrie, #tatum, #hayward {
