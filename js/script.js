@@ -19,18 +19,112 @@ document.getElementById('addTeam').onclick = function(event)
  	document.getElementById('addTeam').style.display = "none";
 }
 
-function filterResult() {
-	if (document.getElementById('cle').checked) {
-	document.getElementById('steph').style.display = "none";
-	document.getElementById('durant').style.display = "none";
-	document.getElementById('klay').style.display = "none";
+function filterResult(val) {
+	if (val == "cle") {
+		if (document.getElementById(val).checked) 
+		{
+			document.getElementById('steph').style.display = "none";
+			document.getElementById('durant').style.display = "none";
+			document.getElementById('klay').style.display = "none";
+			document.getElementById('russ').style.display = "none";
+			document.getElementById('pg').style.display = "none";
+			document.getElementById('melo').style.display = "none";
+			document.getElementById('kyrie').style.display = "none";
+			document.getElementById('tatum').style.display = "none";
+			document.getElementById('hayward').style.display = "none";
+		}
+		else
+		{
+			document.getElementById('steph').style.display = "block";
+			document.getElementById('durant').style.display = "block";
+			document.getElementById('klay').style.display = "block";
+			document.getElementById('russ').style.display = "block";
+			document.getElementById('pg').style.display = "block";
+			document.getElementById('melo').style.display = "block";
+			document.getElementById('kyrie').style.display = "block";
+			document.getElementById('tatum').style.display = "block";
+			document.getElementById('hayward').style.display = "block";
+		}
 	}
-	else
-	{
-		document.getElementById('steph').style.display = "block";
-		document.getElementById('durant').style.display = "block";
-		document.getElementById('klay').style.display = "block";
+	if (val == "gsw") {
+		if (document.getElementById(val).checked) 
+		{
+			document.getElementById('lebron').style.display = "none";
+			document.getElementById('love').style.display = "none";
+			document.getElementById('korver').style.display = "none";
+			document.getElementById('russ').style.display = "none";
+			document.getElementById('pg').style.display = "none";
+			document.getElementById('melo').style.display = "none";
+			document.getElementById('kyrie').style.display = "none";
+			document.getElementById('tatum').style.display = "none";
+			document.getElementById('hayward').style.display = "none";
+		}
+		else
+		{
+			document.getElementById('lebron').style.display = "block";
+			document.getElementById('love').style.display = "block";
+			document.getElementById('korver').style.display = "block";
+			document.getElementById('russ').style.display = "block";
+			document.getElementById('pg').style.display = "block";
+			document.getElementById('melo').style.display = "block";
+			document.getElementById('kyrie').style.display = "block";
+			document.getElementById('tatum').style.display = "block";
+			document.getElementById('hayward').style.display = "block";
+		}
 	}
+	if (val == "okc") {
+		if (document.getElementById(val).checked) 
+		{
+			document.getElementById('steph').style.display = "none";
+			document.getElementById('durant').style.display = "none";
+			document.getElementById('klay').style.display = "none";
+			document.getElementById('lebron').style.display = "none";
+			document.getElementById('love').style.display = "none";
+			document.getElementById('korver').style.display = "none";
+			document.getElementById('kyrie').style.display = "none";
+			document.getElementById('tatum').style.display = "none";
+			document.getElementById('hayward').style.display = "none";
+		}
+		else
+		{
+			document.getElementById('steph').style.display = "block";
+			document.getElementById('durant').style.display = "block";
+			document.getElementById('klay').style.display = "block";
+			document.getElementById('lebron').style.display = "block";
+			document.getElementById('love').style.display = "block";
+			document.getElementById('korver').style.display = "block";
+			document.getElementById('kyrie').style.display = "block";
+			document.getElementById('tatum').style.display = "block";
+			document.getElementById('hayward').style.display = "block";
+		}
+	}
+	if (val == "bos") {
+		if (document.getElementById(val).checked) 
+		{
+			document.getElementById('steph').style.display = "none";
+			document.getElementById('durant').style.display = "none";
+			document.getElementById('klay').style.display = "none";
+			document.getElementById('russ').style.display = "none";
+			document.getElementById('pg').style.display = "none";
+			document.getElementById('melo').style.display = "none";
+			document.getElementById('lebron').style.display = "none";
+			document.getElementById('love').style.display = "none";
+			document.getElementById('korver').style.display = "none";
+		}
+		else
+		{
+			document.getElementById('steph').style.display = "block";
+			document.getElementById('durant').style.display = "block";
+			document.getElementById('klay').style.display = "block";
+			document.getElementById('russ').style.display = "block";
+			document.getElementById('pg').style.display = "block";
+			document.getElementById('melo').style.display = "block";
+			document.getElementById('lebron').style.display = "block";
+			document.getElementById('love').style.display = "block";
+			document.getElementById('korver').style.display = "block";
+		}
+	}
+
 }
 
 /*document.getElementById('teams').onclick = function(event)

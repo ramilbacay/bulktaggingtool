@@ -28,13 +28,13 @@
 			<div class="tabcontent" id="employeesContent">
 				<form class="form">
 					<div class="row">
-						<div class="form-group col-md-4 cle">
+						<div class="form-group col-md-4" id="lebron">
 							<input class="" type="checkbox"><label>&nbsp; Lebron James</label>
 						</div>
-						<div class="form-group col-md-4 cle">
+						<div class="form-group col-md-4" id="love">
 							<input class="" type="checkbox"><label>&nbsp; Kevin Love</label>
 						</div>
-						<div class="form-group col-md-4 cle">
+						<div class="form-group col-md-4" id="korver">
 							<input class="" type="checkbox"><label>&nbsp; Kyle Korver</label>
 						</div>
 					</div>
@@ -50,24 +50,24 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="form-group col-md-4 okc">
+						<div class="form-group col-md-4" id="russ">
 							<input class="" type="checkbox"><label>&nbsp; Russel Westbrook</label>
 						</div>
-						<div class="form-group col-md-4 okc">
+						<div class="form-group col-md-4" id="pg">
 							<input class="" type="checkbox"><label>&nbsp; Paul George</label>
 						</div>
-						<div class="form-group col-md-4 okc">
+						<div class="form-group col-md-4" id="melo">
 							<input class="" type="checkbox"><label>&nbsp; Carmelo Anthony</label>
 						</div>
 					</div>
 					<div class="row">
-						<div class="form-group col-md-4 bos">
+						<div class="form-group col-md-4" id="kyrie">
 							<input class="" type="checkbox"><label>&nbsp; Kyrie Irving</label>
 						</div>
-						<div class="form-group col-md-4 bos">
+						<div class="form-group col-md-4" id="tatum">
 							<input class="" type="checkbox"><label>&nbsp; Jayson Tatum</label>
 						</div>
-						<div class="form-group col-md-4 bos">
+						<div class="form-group col-md-4" id="hayward">
 							<input class="" type="checkbox"><label>&nbsp; Gordon Hayward</label>
 						</div>
 					</div>
@@ -92,16 +92,16 @@
 					<h5>Filter the result:</h5>
 			</div>
 			<div class="row">
-					<input class="" type="checkbox" id="cle" onclick="filterResult()"><label>&nbsp; Cleveland Cavaliers</label>
+					<input class="" type="checkbox" id="cle" value="cle" onclick="filterResult('cle')"><label>&nbsp; Cleveland Cavaliers</label>
 			</div>
 			<div class="row">
-					<input class="" type="checkbox" id="gsw"><label>&nbsp; Golden State Warriors</label>
+					<input class="" type="checkbox" id="gsw" value="gsw" onclick="filterResult('gsw')"><label>&nbsp; Golden State Warriors</label>
 			</div>
 			<div class="row">
-					<input class="" type="checkbox" id="okc"><label>&nbsp; OKC Thunder</label>
+					<input class="" type="checkbox" id="okc" value="okc" onclick="filterResult('okc')"><label>&nbsp; OKC Thunder</label>
 			</div>
 			<div class="row">
-					<input class="" type="checkbox" id="bos"><label>&nbsp; Boston Celtics</label>
+					<input class="" type="checkbox" id="bos" value="bos" onclick="filterResult('bos')"><label>&nbsp; Boston Celtics</label>
 			</div>
 		</div>
 	</div>
