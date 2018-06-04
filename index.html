@@ -2,27 +2,110 @@
 <html>
 <head>
 	<title>Bulk Tagging Tool (Prototype)</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
 
 
 <body>
 
 <div class="container">
-	<h2 id="h2">Please select the employees you wish to tag.</h2>
-	<h5 id="h5">Tip: You can filter the employees displayed using the filters on the side.</h5>
-	<ul class="nav nav-tabs tabs">
-	  <li class="active" id="employees"><a href="#">Employees</a></li>
+	<div class="container-header col-md-12">
+		<h2 id="h2">Please select the employees you wish to tag.</h2>
+		<h5 id="h5">Tip: You can filter the employees displayed using the filters on the side.</h5>
+	</div>
+	<div class="row">
+		<div class="col-md-10">
+			<ul class="nav nav-tabs tabs">
+			  <li class="active" id="employees"><a href="#">Employees</a></li>
+			  <li class="disabled" id="teams"><a href="#" disabled>Teams</a></li>
+			  <li class="disabled" id="awards"><a href="#">Awards</a></li>
+			</ul>
 
-	  <li class="disabled" id="teams"><a href="#" disabled>Teams</a></li>
-	  <li class="disabled" id="awards"><a href="#">Awards</a></li>
-	</ul>
+			<!-- Employees -->
+			<div class="tabcontent" id="employeesContent">
+				<form class="form">
+					<div class="row">
+						<div class="form-group col-md-4 cle">
+							<input class="" type="checkbox"><label>&nbsp; Lebron James</label>
+						</div>
+						<div class="form-group col-md-4 cle">
+							<input class="" type="checkbox"><label>&nbsp; Kevin Love</label>
+						</div>
+						<div class="form-group col-md-4 cle">
+							<input class="" type="checkbox"><label>&nbsp; Kyle Korver</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4" id="steph">
+							<input class="" type="checkbox"><label>&nbsp; Stephen Curry</label>
+						</div>
+						<div class="form-group col-md-4" id="durant">
+							<input class="" type="checkbox"><label>&nbsp; Kevin Durant</label>
+						</div>
+						<div class="form-group col-md-4" id="klay">
+							<input class="" type="checkbox"><label>&nbsp; Klay Thompson</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4 okc">
+							<input class="" type="checkbox"><label>&nbsp; Russel Westbrook</label>
+						</div>
+						<div class="form-group col-md-4 okc">
+							<input class="" type="checkbox"><label>&nbsp; Paul George</label>
+						</div>
+						<div class="form-group col-md-4 okc">
+							<input class="" type="checkbox"><label>&nbsp; Carmelo Anthony</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4 bos">
+							<input class="" type="checkbox"><label>&nbsp; Kyrie Irving</label>
+						</div>
+						<div class="form-group col-md-4 bos">
+							<input class="" type="checkbox"><label>&nbsp; Jayson Tatum</label>
+						</div>
+						<div class="form-group col-md-4 bos">
+							<input class="" type="checkbox"><label>&nbsp; Gordon Hayward</label>
+						</div>
+					</div>
+				</form>	
+			</div>
+			<button id="addTeam">Add Teams</button>
 
-<div class="tabcontent">
-	<button>Next</button>
-</div>
+			<!-- Teams -->
+			<div class="tabcontent" id="teamsContent">
+				<button id="addTeam">Add Awards</button>
+			</div>
+
+			<!-- Awards -->
+			<div class="tabcontent" id="awardsContent">
+				<button id="addTeam">Next</button>
+			</div>
+		</div>
+
+		<!-- Filter -->
+		<div class="col-md-2" id="filter">
+			<div class="row">
+					<h5>Filter the result:</h5>
+			</div>
+			<div class="row">
+					<input class="" type="checkbox" id="cle" onclick="filterResult()"><label>&nbsp; Cleveland Cavaliers</label>
+			</div>
+			<div class="row">
+					<input class="" type="checkbox" id="gsw"><label>&nbsp; Golden State Warriors</label>
+			</div>
+			<div class="row">
+					<input class="" type="checkbox" id="okc"><label>&nbsp; OKC Thunder</label>
+			</div>
+			<div class="row">
+					<input class="" type="checkbox" id="bos"><label>&nbsp; Boston Celtics</label>
+			</div>
+		</div>
+	</div>
+
 
 </div>
 
